@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color:darkslategray;
+}
+nav{
+    display: flex;
+    width: 85%;
+    margin: auto;
+    padding: 20px 0;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 30px;
+
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20 px;
+    letter-spacing: 5px ;
+    word-spacing: 10px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color:aqua;
+    font-weight: 500;
+    border-radius: 5px;
+    background: black;
+
+   
+}
+
+nav ul li a:hover{
+        color:greenyellow;
+
+}
+img{
+    object-fit: cover;
+    height: 224px;
+    width: 200px;
+    border-bottom-left-radius:21% ;
+    border-bottom-right-radius: 21%;
+    border-top-left-radius: 5%;
+    border-top-right-radius: 5%;
+}
+#wrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
+.container {
+    background-color: rgba(177, 211, 241, 0.2);
+    width: 200px;
+    height: 250px;
+    border-radius: 25%;
+    margin: 20px auto;
+}
+/*
+- Transition do provide ways to control the speed of our animation when changing CSS properties.
+- Transform-style: This property will verify
+if the children of an element are positioned
+in the 3d space or 2d.
+The value: preserve-3d state that the children
+of an element should be placed in the 3d - space
+*/
+#card{
+    width: 200px;
+    height: 250px;
+    position: relative;
+    text-align: center;
+    transition: transform 0.5s;
+    transform-style: preserve-3d;
+}
+/* Will focus on horizontal flip card */
+/*
+It easy to rotate an html element by using
+the rotate() function from transform
+*/
+.container:hover #card{
+    transform: rotateY(180deg);
+}
+/* Positioning card front and card back*/
+#front, #back {
+    position: absolute;
+    width: 200px;
+    height: 250px;
+    border-radius: 20%;
+    /* Have to cover most of the browsers
+    Defines whether or not the back face of an element should be visible when facing the
+    user
+    */
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+}
+#front{
+    background-color: darkgoldenrod;
+}
+#back{
+    background-color: rgb(79, 68, 47);
+    color: white;
+    transform: rotateY(180deg);
+}

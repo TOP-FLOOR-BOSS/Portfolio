@@ -1,11 +1,15 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    font-family:'Times New Roman', Times, serif;
+    text-align: center;
+    line-height: 1.5;
+    letter-spacing: 1px;
   }
   
 
 body {
-    display: flex;
     align-items: center;
     justify-content: center;
     height: 100%;
@@ -23,6 +27,7 @@ body {
     padding: 20px 0;
     align-items: center;
     justify-content: space-between;
+    font-size: 30px;
 
 }
 
@@ -31,6 +36,7 @@ nav ul li{
     list-style: none;
     margin: 10px 20 px;
     letter-spacing: 5px ;
+    word-spacing: 10px;
 }
 
 nav ul li a{
@@ -48,21 +54,24 @@ nav ul li a:hover{
 
 }
 
-  
-  .pp {
-    
-    float: right;
-  }
+.imgs{
+    display: flex;
+    float: left;
+}
+
+
+
   .Name {
-    background-color: #F1F1F1;
     text-align: center;
     padding: 20px;
     font-size: 29px;
+    color: ghostwhite;
   }
   .lorem{
       font-size: 22px;
       border-radius: 5px;
       background-color: beige;
+      width: 50%;
      
   }
   .links{
@@ -81,3 +90,9 @@ nav ul li a:hover{
       color: greenyellow;
   }
   
+    .HAC{
+        text-decoration: aqua;
+    
+
+    }
+

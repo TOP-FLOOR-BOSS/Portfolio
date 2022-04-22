@@ -24,6 +24,7 @@ nav{
     padding: 20px 0;
     align-items: center;
     justify-content: space-between;
+    font-size: 30px;
 
 }
 
@@ -52,7 +53,7 @@ nav ul li a:hover{
 
 .detel{
     margin-left: 8%;
-    margin-top: 15%;
+    width: 50%;
 
 }
 
@@ -60,6 +61,7 @@ nav ul li a:hover{
     font-size: 50px;
     color:
     margin-bottom: 20px;
+    wi
 
 }
 
@@ -74,7 +76,7 @@ p{
     font-size: 30px;
     color:beige;
     border-radius: 5px;
-    background: blue
+    background-color: cadetblue;
     
     
     
@@ -82,24 +84,19 @@ p{
 }
 
 .doll{
-    width: 60%;
-    height: 10%;
-    position: absolute;
-    bottom: 0;
-    right: 100px;
-}
-.me{
 
-        display: flex;
-        width: 85%;
+}
+
+
+.me{
         margin: auto;
         padding: 20px 0;
-        align-items: center;
-        justify-content: space-between;
-    
-     
-    
-    
+        width: 400px;
 }
 
+.landing{
+    
+display: flex;
+flex-wrap: wrap;
+}
 
